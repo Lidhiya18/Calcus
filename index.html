@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+<Style>
+#data_field{
+padding: 30px;
+text-align: right;
+margin: auto;
+padding-bottom: auto;
+border-radius: 3px;
+border:3px;
+border-color: black;
+}
+
+.btn{
+   background-color:rgb(0, 0, 0);
+   padding: 8px;
+   margin: auto;
+   width: 55px;
+   color: white;
+}
+.btn-equal{
+  background-color:rgb(45, 88, 47);
+  color: white;
+  padding: 8px;
+   margin: auto;
+   width: 55px;
+}
+.btn-clear{
+  background-color:rgb(167, 2, 2);
+  color: white;
+  padding: 8px;
+   margin: auto;
+   width: 55px;
+}
+</Style>
+
+  </head>
+  <body>
+    <form name="form1">
+    <div>
+      <input type="text" placeholder="Enter value"  name="data" id="data_field"/>
+    </div>
+    <div>
+      <input class="btn" type="button" name="1" value="1"  onclick="form1.data.value+='1'"/>
+      <input class="btn" type="button" name="2" value="2"  onclick="form1.data.value+='2'"/>
+      <input class="btn" type="button" name="3" value="3"  onclick="form1.data.value+='3'"/>
+      <input class="btn" type="button" name="minus" value="-" onclick="form1.data.value+='-'"/>
+    </div>
+    <div>
+      <input class="btn" type="button" name="4" value="4" onclick="form1.data.value+='4'"/>
+      <input class="btn" type="button" name="5" value="5" onclick="form1.data.value+='5'"/>
+      <input class="btn" type="button" name="6" value="6" onclick="form1.data.value+='6'"/>
+      <input class="btn" type="button" name="add" value="+" onclick="form1.data.value+='+'"/>
+    </div>
+    
+    <div>
+        <input class="btn" type="button" name="7" value="7" onclick="form1.data.value+='7'"/>
+        <input class="btn" type="button" name="8" value="8" onclick="form1.data.value+='8'"/>
+        <input class="btn" type="button" name="9" value="9" onclick="form1.data.value+='9'"/>
+        <input class="btn" type="button" name="multi" value="*" onclick="form1.data.value+='*'"/>
+    </div>
+    <div>
+        <input class="btn" type="button" name="0" value="0" onclick="form1.data.value+='0'"/>
+        <input class="btn" type="button" name="div" value="/" onclick="form1.data.value+='/'"/>
+        <input class="btn-clear" type="button" name="clear" value="ac" onclick="form1.data.value=''"/>
+        <input class="btn-equal" type="button" name="equal" value="=" onclick="form1.data.value=eval(form1.data.value)"/>
+    </div>
+</form>
+  </body>
+</html>
